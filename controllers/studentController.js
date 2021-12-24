@@ -50,7 +50,7 @@ const updateStudent = async(req,res)=>{
 
 // delete Student by id
 const deleteStudent = async(req,res)=>{
-    const {id} = req.body;
+    const {id} = req.params;
     try {
         const deleteStudent = await Student.destroy({
             where:{

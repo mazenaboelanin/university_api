@@ -4,11 +4,9 @@ const { getAllStudents, addStudent, updateStudent, deleteStudent, getAllStudents
 const Student = require('../models/Student');
 
 
+router.route('/').get(getAllStudents).post(addStudent);
+router.route('/:id').put(updateStudent).delete(deleteStudent);
 
-router.get('/',getAllStudents);
-router.post('/addStudent',addStudent);
-router.put('/updateStudent/:id',updateStudent);
-router.delete('/deleteStudent',deleteStudent);
 router.get('/studentsAndDepartments', getAllStudentsAndDepartments);
 router.get('/studentsAndDepartmentsSpecificColumns', getAllStudentsAndDepartmentsSpecificColumns);
 

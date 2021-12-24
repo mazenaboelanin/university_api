@@ -7,13 +7,13 @@ const classroom = require('../models/Classroom');
 //get all classrooms
 router.get('/', getAllClassRooms);
 // get specific classroom
-router.get('/room/:roomNumber', getClassRoom);
+router.get('/:roomNumber', getClassRoom);
 
 //get all classrooms order by ASC
-router.get('/rooms/ordered/asc', getAllClassRoomsOrderedByRoomNumberASC);
+router.get('/ordered/asc', getAllClassRoomsOrderedByRoomNumberASC);
 
 //get all classrooms order by ASC
-router.get('/rooms/ordered/desc', getAllClassRoomsOrderedByRoomNumberDESC);
+router.get('/ordered/desc', getAllClassRoomsOrderedByRoomNumberDESC);
 
 
 //get specfic classroom by building name 

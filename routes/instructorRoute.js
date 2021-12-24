@@ -7,7 +7,7 @@ const { getAllInstructors, getInstuctor, getAllInstructorsAndDepartments,getAllI
 // get all instructors
 router.get('/', getAllInstructors);
 // get specific instructor by id
-router.get('/instructor/:id', getInstuctor);
+router.get('/:id', getInstuctor);
 // get all instructors and their departments
 router.get('/instructorsAndDepartments', getAllInstructorsAndDepartments);
 // get all instuctors and their dpeartments specific columns
